@@ -1,12 +1,11 @@
-<head>
-
-</head>
-
-
-<body>
-{{# if currentUser }}
-   {{> adminView}}
-{{else}}
-    {{> candidateView}}
-{{/if}}
-</body>
+<template name="adminLayout">
+        <!-- Site wrapper -->
+        <div class="wrapper">
+            {{> mainHeader}}
+            {{> sidebar}}
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                {{> yield}}
+            </div><!-- /.content-wrapper -->
+        </div>
+</template>
