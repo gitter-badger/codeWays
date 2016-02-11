@@ -3,17 +3,19 @@ Template.register.events({
         event.preventDefault();
         var email = $('[name=email]').val();
         var password = $('[name=password]').val();
+        var fullname= $('[name=fullname]').val();
         Accounts.createUser({
             email: email,
-            password: password
+            password: password,
+            fullname: fullname
         }, function(error){
             if(error){
-                console.log(error.reason); // Output error if registration fails
+                $('.error-msg').html(error.reason);
+                $('.error-msg').removeClass('hidden');
             } else {
                 Router.go("login"); // Redirect user if registration succeeds
             }
         });
-        Router.go('login');
     }
 });
 

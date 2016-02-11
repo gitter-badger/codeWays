@@ -5,6 +5,15 @@
 html{
   background-color: #ecf0f5;
 }
+body{
+  font-size: 15px;
+}
+#iron-router-progress {
+    background-color : #3c8dbc;
+}
+#iron-router-progress.spinner:before {
+    border-color : #3c8dbc;
+}
 .skin-blue .main-header .navbar {
   background-color: #ecf0f5;
 }
@@ -142,4 +151,7 @@ html{
 }
 .skin-blue.layout-top-nav .main-header > .logo:hover {
   background-color: #3b8ab8;
+}
+.add-new-btn{
+  margin-top: 2em;
 }
