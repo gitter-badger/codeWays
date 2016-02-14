@@ -1,0 +1,55 @@
+<template name="testQuestion">
+    <section class="content-header">
+      <h2>
+        A Game of Threes
+      </h2>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12 col-md-10">
+                <p class="lead">
+                Back in middle school, I had a peculiar way of dealing with super boring classes. I would take my handy pocket calculator and play a "Game of Threes". Here's how you play it:<br/>
+                First, you mash in a random large number to start with. Then, repeatedly do the following:<br/></p>
+                <ul class="lead">
+                    <li>If the number is divisible by 3, divide it by 3.</li>
+                    <li>If it's not, either add 1 or subtract 1 (to make it divisible by 3), then divide it by 3.</li>
+                </ul>
+                <p class="lead">
+                The game stops when you reach "1".
+                While the game was originally a race against myself in order to hone quick math reflexes, it also poses an opportunity for some interesting programming challenges. Today, the challenge is to create a program that "plays" the Game of Threes.
+                </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-10">
+                <h3>Input description</h3>
+                <p class="lead">
+                The input is a single number: the number at which the game starts.<br/>
+                <pre>100</pre>
+                </p>
+
+                <h3>Output description</h3>
+                <p class="lead">
+                The output is a list of valid steps that must be taken to play the game. Each step is represented by the number you start at, followed by either -1 or 1 (if you are adding/subtracting 1 before dividing), or 0 (if you are just dividing). The last line should simply be 1.<br/>
+
+                <pre>
+100 -1
+33 0
+11 1
+4 -1
+1   </pre>
+
+                </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-md-10">
+            <h3>Editor</h3>
+                {{> editor}}
+            </div>
+          </div>
+    </section><!-- /.content -->
+</template>
