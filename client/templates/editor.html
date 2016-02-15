@@ -1,5 +1,12 @@
 <template name="editor">
-
-    {{> CodeMirror id="idEditor" options=editorOptions code=editorCode reactiveVar="editorContent"}}
-
+    <div class="editor-container">
+        <div class="editor-head">
+        <select class="form-control lang-dropdown">
+            <option>C</option>
+            <option>Java</option>
+            <option>Python</option>
+        </select>
+        </div>
+             {{> CodeMirror id="idEditor" options=editorOptions code=editorCode reactiveVar="editorContent"}}
+    </div>
 </template>

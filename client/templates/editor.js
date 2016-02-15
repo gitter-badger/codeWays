@@ -3,7 +3,7 @@ Template.editor.helpers({
         return {
             lineNumbers: true,
             mode: "javascript",
-            theme: "monokai"
+            theme: "solarized dark"
         }
     },
 

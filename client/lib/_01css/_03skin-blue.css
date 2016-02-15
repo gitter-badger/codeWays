@@ -158,3 +158,12 @@ body{
 .lead{
   font-weight: 400;
 }
+.editor-head{
+  display: block;
+  clear: both;
+  padding-bottom: 3em;
+}
+.lang-dropdown{
+  width: 10%;
+  float: right;
+}
